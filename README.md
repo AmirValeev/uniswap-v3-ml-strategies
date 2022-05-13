@@ -2,6 +2,7 @@
 
 This repository contains several python scripts to simulate the performance of Uniswap v3 liquidity provision strategies performance and evaluate risks. The main scripts of the package are:
 
+
 1. [ActiveStrategyFramework.py](ActiveStrategyFramework.py) base code of the framework which executues a strategy, conducting either back-testing simulations (```simulate_strategy``` function and passing in historical swap data), or conducting a live implementation of the strategy.
 2. [ML_Strategy.py](ML_Strategy.py) strategy uses an AR(1)-GARCH(1,1) model to predict volatility alongside with XGBoost to predict base asset price movement.
 3. [GetPoolData.py](GetPoolData.py) which downloads the data necessary for the simulations. 
